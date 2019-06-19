@@ -1,0 +1,503 @@
+/**************************
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+Colors 
+Green #7BB515
+Text  #060901
+Light Grey	#F5F5F5
+*******************************/
+* {
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+    width: 100%;
+    color: #060901;
+    margin: 0 auto;
+}
+.mainContainer{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+h1, h2, h3{
+	font-family: 'Poppins', sans-serif;
+	color: #060901;
+	font-weight:bold;
+}
+p{
+	font-size: 1.1em;
+	line-height: ;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #060901;
+}
+.content a{
+	text-decoration: none;
+	color: #2BDFE5;
+}
+img{
+	max-width: 100%;
+	align-self:center;
+	height: auto;
+	display: block;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 20px;
+	box-shadow: 0 4px 2px -2px #ddd;
+	border-bottom: 1px solid #dddddd;
+}
+nav img{
+	max-width: 200px;
+}
+.links{
+	display: flex;
+	justify-content: space-between;
+	color: #361449;
+	font-size:1.1em;
+	align-items: center;
+}
+
+.linkStyle{
+	position: relative; 
+	text-decoration: none;
+	color: #7BB515;
+	font-family: 'Poppins', sans-serif;
+}
+
+.cl-effect-14 a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.cl-effect-14 a::before,
+.cl-effect-14 a::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #7BB515;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-14 a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.cl-effect-14 a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::before,
+.cl-effect-14 a:focus::after {
+	opacity: 1;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+header{
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	margin: 30px auto;
+}
+.steps{
+	padding: 20px 30px;
+	background-color: #F5F5F5;
+	border-radius: 8px;
+	margin-right: -30px;
+	z-index: 2;
+}
+.steps h3{
+	margin-bottom: -10px;
+}
+.order{
+	padding: 40px 30px 40px 60px;
+	background-color: #7BB515;
+	border-radius: 8px;
+	align-self:center;
+}
+
+.steps p{
+	color: #7BB515;
+}
+.serviceHeading{
+	display: flex;
+	width: 70%;
+	margin: 60px auto;
+	justify-content: space-around;
+}
+.serviceHeadingText{
+	align-self:center;
+}
+.serviceHeading h1, .serviceHeading h3{
+	text-align:center;
+}
+.serviceHeading h2{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin: 0 auto;
+	box-shadow:0 2px 4px 0px #d3d3d3;
+	border-radius: 8px;
+	padding: 4px;
+	transition: all .3s ease-in-out;
+}
+.phoneButton:hover{
+	box-shadow:0 4px 4px 2px #ddd;
+	cursor:pointer;
+	transform:scale(1.03);
+}
+
+
+.buttonText{
+	align-self:center;
+	font-size: .8em;
+}
+.serviceHeading h3{
+	color: #7BB515;
+}
+.serviceList{
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: 0 auto;
+	justify-content:space-between;
+}
+section{
+	box-shadow:0 2px 4px 0px #d3d3d3;
+	text-align:center;
+	padding: 30px;
+	border-radius: 8px;
+	flex: 1 20%;
+	margin: 20px;
+	transition: all .3s ease-in-out;
+}
+section h3{
+	color: #7BB515; 
+	font-size:1.4em;
+}
+
+.imageGallery{
+	display: flex;
+	flex-wrap:wrap;
+	width: 90%;
+	justify-content: space-around;
+	margin: 10px auto;
+}
+.galleryHeading{
+	width: 90%;
+	margin: 0 auto;
+}
+.galleryHeading h1, .removableJunkTitle{
+	padding: 30px 0;
+}
+.imageContainer{
+	position: relative;
+}
+.image{
+	filter:grayscale();
+	border-radius: 6px;
+	margin: 16px 0;
+}
+.overlay {
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+  
+  background: rgba(0, 0, 0, 0.7); 
+  color: #7BB515;
+  width: 80%;
+	height: 70%;
+  transition: all 1s ease;
+  font-size: 2.5em;
+	font-family: 'Poppins', sans-serif;
+  text-align: center;
+	display: flex;
+	justify-content: center;
+	border-radius: 6px;
+}
+.overlay p{
+	align-self:center;
+}
+
+.imageContainer:hover .overlay{
+	background: rgba(255, 255, 255, 0); 
+}
+.imageContainer:hover .image{
+	filter:grayscale(0);
+}
+.imageContainer:hover p{
+	display:none;
+}
+.removableJunkTitle{
+	width:90%;
+	margin: 30px auto 10px;
+	border-top: 1px solid #7bb515;
+}
+
+.removableJunk{
+	display:flex;
+	flex-wrap:wrap;
+	width: 90%;
+	margin: 0 auto;
+	justify-content: space-around;
+	border-bottom: 1px solid #7bb515;
+}
+ul{
+	list-style-image: url(images/trash-we-remove.png);
+	list-style-position: inside;
+}
+.removableJunk li{
+	padding: 3px;
+	font-size:1.2em;
+}
+
+.title{
+	color:#7bb515;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-bottom:5px;
+	
+}
+.removableJunk svg{
+	order:5;
+	align-self:center;
+	margin-top:90px;
+}
+
+
+.removableJunk:hover .lid{
+	animation: shake 0.5s;
+	animation-iteration-count: 6;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+iframe{
+	max-width:100%;
+}
+
+.contactContainer{
+	display:flex;
+	width: 60%;
+	margin: 60px auto;
+	justify-content:space-between;
+}
+.contactInfo h2{
+	color: #7bb515;
+}
+.contactInfo{
+	text-align:center;
+}
+.contactInfo img{
+	margin: 0 auto 20px;
+}
+footer{
+	background-color:#7bb515;
+	display:flex;
+	justify-content:space-between;
+	color:white;
+	padding:10px 10px 0;
+}
+.footerContact{
+	display:flex;
+	width: 25%;
+	justify-content:space-around;
+}
+footer h3{
+	margin:0;
+	color: white;
+}
+.footerContact p{
+	font-size:.9em;
+}
+.imageGallery, .galleryHeading{
+	display: none;
+}
+
+@media(max-width:1100px){
+	.footerContact{
+		width: 70%;
+	}
+}
+
+@media(max-width:850px){
+	.order{
+		padding: 10px 30px 10px 60px;
+	}
+	.serviceList{
+		width: 90%;
+	}
+	.serviceHeading{
+		margin: 0 auto;
+		width: 84%;
+	}
+	section{
+		flex: 1 30%;
+	}
+	.contactContainer{
+		width:90%;
+	}
+	.serviceHeading h2{
+		width: 90%;
+	}
+	.imageContainer{
+		flex: 1 30%;
+	}
+	.image{
+		margin: 10px auto 10px;
+		filter:grayscale(0);
+		max-width: 90%;
+	}
+	.overlay{
+		background: rgba(0, 0, 0, 0.5); 
+  		color: #7BB515;
+  		width: 80%;
+		height: 20%;
+		top: 80%;
+		border-radius:0;
+	}
+}
+@media(max-width:650px){
+	header{
+		flex-direction:column;
+	}
+	.steps{
+		margin: 0 auto 10px;
+	}
+	.serviceHeading{
+		flex-direction: column;
+	}
+	section{
+		padding:5px;
+		margin: 10px;
+	}
+	section h3{
+		margin: 10px;
+	}
+	nav{
+		flex-direction: column;
+	}
+	nav img{
+		max-width: 160px;
+		margin-bottom: 20px;
+		align-self:flex-start;
+	}
+	.imageGallery{
+		flex-direction: column;
+		width: 90%;
+		margin:0 auto;
+		justify-content: center;
+	}
+	
+	.contactContainer{
+		flex-direction:column;
+		margin: 0 auto 12px;
+	}
+	.footerContact{
+		width: 90%;
+	}
+	.removableJunkTitle{
+		margin: 0 auto;
+	}
+	.title{
+		font-size:1.3em
+	}
+	.galleryHeading h1, .removableJunkTitle{
+		padding:10px 0;
+	}
+}
+	
+	@media(max-width:550px){
+	.removableJunk{
+		display:flex;
+		flex-wrap:wrap;
+		width: 96%;
+		justify-content: space-between;
+		}
+		
+		section h2{
+			font-size:1.4em;
+		}
+		.order{
+			padding: 12px;
+		}
+	}
+	
+
+@media(max-width:450px){
+	footer{
+		padding: 10px 20px;
+	}
+	footer img{
+		align-self:flex-end;
+	}
+	.footerContact{
+		width: 70%;
+		flex-direction: column;
+	}
+	.serviceList{
+		width: 98%;
+	}
+	
+	
+}
+
+
+
+
