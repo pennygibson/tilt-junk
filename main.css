@@ -36,10 +36,7 @@ a {
 	text-decoration: none;
 	color: #060901;
 }
-.content a{
-	text-decoration: none;
-	color: #2BDFE5;
-}
+
 img{
 	max-width: 100%;
 	align-self:center;
@@ -495,7 +492,14 @@ footer h3{
 		width: 98%;
 	}
 	
-	
+}
+@media(max-width:380px){
+	.links{
+		font-size: .9em;
+	}
+	.cl-effect-14 a {
+	padding: 0 14px;
+	}
 }
 
 
